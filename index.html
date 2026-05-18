@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nhận báo giá VinFast Limo Green tháng 5, tổng ưu đãi lên đến 15%, hỗ trợ trả góp đến 85%. Tư vấn bởi Lê Mạnh VinFast - VinFast Newway Mỹ Đình." />
-  <title>Limo Green - Báo giá ưu đãi | Lê Mạnh VinFast</title>
+  <meta name="description" content="VinFast Limo Green tháng 5 chỉ còn 3 xe duy nhất giữ mức ưu đãi tốt. Tổng hỗ trợ lên đến 15%, trả góp đến 85%. Tư vấn bởi Lê Mạnh VinFast - VinFast Newway Mỹ Đình." />
+  <title>Limo Green - Chỉ còn 3 xe duy nhất | Lê Mạnh VinFast</title>
 
   <style>
     :root {
@@ -551,7 +551,7 @@
     }
 
     .price-card::before {
-      content: "HOT";
+      content: "3 XE";
       position: absolute;
       top: 18px;
       right: -34px;
@@ -730,6 +730,53 @@
       color: var(--gold);
       font-size: 27px;
       line-height: 1.1;
+    }
+
+    .scarcity-box {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background:
+        radial-gradient(circle at top right, rgba(215,25,32,.12), transparent 30%),
+        linear-gradient(145deg, #fff7d8, #ffffff);
+      border: 2px solid var(--gold);
+      border-radius: 34px;
+      padding: 34px 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .scarcity-box::before {
+      content: "CHỈ 3 XE";
+      position: absolute;
+      top: 18px;
+      left: -42px;
+      width: 170px;
+      transform: rotate(-35deg);
+      background: linear-gradient(135deg, var(--red), var(--red-2));
+      color: #fff;
+      padding: 7px 0;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .8px;
+    }
+
+    .scarcity-box h2 {
+      color: var(--dark);
+      font-size: clamp(29px, 4vw, 44px);
+      line-height: 1.14;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .scarcity-box h2 span {
+      color: var(--red);
+    }
+
+    .scarcity-box p {
+      max-width: 760px;
+      margin: 0 auto 18px;
+      color: var(--muted);
+      font-size: 16px;
     }
 
     .steps {
@@ -1148,6 +1195,10 @@
         padding: 22px;
       }
 
+      .scarcity-box {
+        padding: 30px 20px;
+      }
+
       .lead-left {
         min-height: 400px;
       }
@@ -1166,7 +1217,7 @@
 <body>
 
   <div class="topbar">
-    🔥 Limo Green tháng 5: <span>Tổng ưu đãi lên đến 15% · Trả góp đến 85% · Kiểm tra hồ sơ nhanh</span>
+    🔥 Limo Green tháng 5: <span>Chỉ còn đúng 3 xe duy nhất giữ mức ưu đãi tốt · Trả góp đến 85% · Kiểm tra hồ sơ nhanh</span>
   </div>
 
   <nav class="nav">
@@ -1181,7 +1232,7 @@
 
       <div class="nav-actions">
         <a class="nav-phone" href="tel:0357893451">035.789.3451</a>
-        <a class="nav-btn" href="#form">Nhận báo giá</a>
+        <a class="nav-btn" href="#form">Giữ suất tư vấn</a>
       </div>
     </div>
   </nav>
@@ -1192,17 +1243,17 @@
       <div>
         <div class="eyebrow">Tư vấn Limo Green · Ưu đãi theo hồ sơ</div>
 
-        <div class="sale-pill">🚨 Đợt hỗ trợ tốt đang áp dụng trong tháng này</div>
+        <div class="sale-pill">🚨 Chỉ còn đúng 3 xe duy nhất giữ mức hỗ trợ tốt trong đợt này</div>
 
         <h1>Limo <span>Green</span></h1>
 
         <div class="hero-title">
-          Kiểm tra ngay mức hỗ trợ tốt nhất trước khi đặt cọc
+          3 xe cuối cùng – kiểm tra ngay mức hỗ trợ trước khi lỡ đợt giá tốt
         </div>
 
         <p class="hero-desc">
           MPV điện 7 chỗ rộng rãi, chi phí vận hành tối ưu, phù hợp gia đình và khách chạy dịch vụ.
-          <strong>Để lại thông tin để nhận báo giá riêng theo hồ sơ và khu vực đăng ký.</strong>
+          <strong>Để lại thông tin để nhận báo giá riêng theo hồ sơ và giữ suất tư vấn cho 1 trong 3 xe còn lại.</strong>
         </p>
 
         <div class="hero-cards">
@@ -1217,18 +1268,18 @@
           </div>
 
           <div class="hero-card">
-            <strong>Hồ sơ khó</strong>
-            <span>Vẫn có thể kiểm tra</span>
+            <strong>3 xe</strong>
+            <span>Duy nhất còn giữ giá tốt</span>
           </div>
         </div>
 
         <div class="cta-row">
-          <a href="#form" class="btn btn-red">Xem mình được hỗ trợ bao nhiêu</a>
+          <a href="#form" class="btn btn-red">Giữ suất 1 trong 3 xe ngay</a>
           <a href="tel:0357893451" class="btn btn-gold">Gọi ngay 035.789.3451</a>
         </div>
 
         <div class="hero-note">
-          * Ưu đãi, trả góp và phương án vay phụ thuộc vào chính sách thực tế, khu vực đăng ký, điều kiện hồ sơ và ngân hàng xét duyệt.
+          * Số lượng 3 xe áp dụng theo tình trạng thực tế tại thời điểm tư vấn. Ưu đãi, trả góp và phương án vay phụ thuộc vào chính sách thực tế, khu vực đăng ký, điều kiện hồ sơ và ngân hàng xét duyệt.
         </div>
       </div>
 
@@ -1246,8 +1297,8 @@
         </div>
 
         <div class="float-badge two">
-          <small>Nhận tư vấn</small>
-          <strong>Trong hôm nay</strong>
+          <small>Suất giá tốt còn lại</small>
+          <strong>Chỉ 3 xe</strong>
         </div>
       </div>
 
@@ -1268,8 +1319,8 @@
         </div>
 
         <div class="trust-item">
-          <strong>Hồ sơ khó</strong>
-          <span>Vẫn hỗ trợ kiểm tra</span>
+          <strong>3 xe</strong>
+          <span>Duy nhất còn ưu đãi tốt</span>
         </div>
 
         <div class="trust-item">
@@ -1289,8 +1340,8 @@
           <h2>Đừng chốt xe khi chưa biết <span>phương án giá tốt nhất</span></h2>
 
           <p>
-            Mỗi hồ sơ, khu vực đăng ký và phương án thanh toán có thể khác nhau.
-            Anh/chị nên kiểm tra trước để biết rõ mức hỗ trợ, khoản trả trước và khoản góp hằng tháng.
+            Hiện chỉ còn đúng 3 xe duy nhất giữ mức hỗ trợ tốt trong đợt này.
+            Mỗi hồ sơ, khu vực đăng ký và phương án thanh toán có thể khác nhau, nên anh/chị nên kiểm tra sớm trước khi hết suất.
           </p>
 
           <div class="check-list">
@@ -1304,13 +1355,13 @@
         <div class="panel price-card">
           <div class="label">BÁO GIÁ RIÊNG THEO HỒ SƠ</div>
 
-          <div class="big">Giá tốt hơn bạn nghĩ</div>
+          <div class="big">Chỉ còn 3 xe duy nhất</div>
 
           <p>
-            Không cần đoán giá. Gửi thông tin để em kiểm tra mức hỗ trợ còn áp dụng cho anh/chị trong hôm nay.
+            Mức hỗ trợ tốt hiện tại không còn nhiều. Anh/chị nên kiểm tra sớm để giữ suất phù hợp trước khi 3 xe cuối được chốt.
           </p>
 
-          <a href="#form" class="btn btn-red">Kiểm tra giá ngay</a>
+          <a href="#form" class="btn btn-red">Kiểm tra 3 xe còn lại</a>
         </div>
 
       </div>
@@ -1359,12 +1410,13 @@
           <div>
             <h2>Chính sách hỗ trợ tháng 5</h2>
             <p>
+              Chỉ còn đúng 3 xe duy nhất giữ mức hỗ trợ tốt trong đợt này.
               Tổng ưu đãi có thể lên đến 15%, hỗ trợ trả góp đến 85%.
               Hồ sơ khó hoặc từng phát sinh nợ xấu vẫn có thể kiểm tra phương án vay phù hợp.
             </p>
           </div>
 
-          <div class="limited">Ưu đãi theo từng đợt xe</div>
+          <div class="limited">Chỉ còn 3 xe duy nhất</div>
         </div>
 
         <div class="policy-grid">
@@ -1379,11 +1431,22 @@
           </div>
 
           <div class="policy-item">
-            <span>Hồ sơ khó / nợ xấu</span>
-            <strong>Hỗ trợ kiểm tra</strong>
+            <span>Suất giá tốt còn lại</span>
+            <strong>3 xe duy nhất</strong>
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="scarcity-box">
+        <h2>⚠️ Hiện chỉ còn đúng <span>3 xe duy nhất</span> giữ mức hỗ trợ tốt</h2>
+        <p>
+          Khi đủ 3 xe, chính sách hiện tại có thể thay đổi theo đợt tiếp theo.
+          Anh/chị quan tâm nên để lại thông tin sớm để được kiểm tra giá, phương án trả góp và giữ suất tư vấn phù hợp.
+        </p>
+        <a href="#form" class="btn btn-red">Giữ suất tư vấn ngay</a>
       </div>
     </section>
 
@@ -1405,8 +1468,8 @@
 
         <div class="step">
           <div class="step-number">2</div>
-          <h3>Kiểm tra ưu đãi</h3>
-          <p>Xem chính sách còn áp dụng theo đợt xe hiện tại.</p>
+          <h3>Kiểm tra 3 xe</h3>
+          <p>Xem suất ưu đãi còn áp dụng theo đợt xe hiện tại.</p>
         </div>
 
         <div class="step">
@@ -1433,7 +1496,7 @@
         <div class="reason-card">
           <h3>Biết rõ giá lăn bánh</h3>
           <p>
-            Tư vấn chi phí theo khu vực đăng ký, tránh xem nhầm giá và bỏ sót ưu đãi đang áp dụng.
+            Tư vấn chi phí theo khu vực đăng ký, tránh xem nhầm giá và bỏ sót ưu đãi đang áp dụng cho 3 xe còn lại.
           </p>
         </div>
 
@@ -1452,9 +1515,9 @@
         </div>
 
         <div class="reason-card">
-          <h3>Tiết kiệm thời gian</h3>
+          <h3>Tránh lỡ đợt giá tốt</h3>
           <p>
-            Có thể tư vấn nhanh qua điện thoại/Zalo trước, sau đó mới hẹn xem xe trực tiếp nếu phù hợp.
+            Khi 3 xe cuối được chốt, chính sách hiện tại có thể thay đổi theo đợt tiếp theo.
           </p>
         </div>
       </div>
@@ -1478,7 +1541,7 @@
           <div class="check-list">
             <div>📍 Đại lý: VinFast Newway Mỹ Đình</div>
             <div>📞 Hotline / Zalo: 035.789.3451</div>
-            <div>✅ Tư vấn chính sách, trả góp và hồ sơ rõ ràng</div>
+            <div>✅ Kiểm tra nhanh 3 xe còn giữ mức hỗ trợ tốt</div>
             <div>🚗 Hỗ trợ xem xe, giữ suất tư vấn nếu còn ưu đãi phù hợp</div>
           </div>
         </div>
@@ -1489,7 +1552,7 @@
       <div class="lead-section">
 
         <div class="lead-left">
-          <h2>Nhận báo giá ưu đãi ngay</h2>
+          <h2>Giữ suất tư vấn 1 trong 3 xe còn lại</h2>
 
           <p>
             Em sẽ tư vấn nhanh giá lăn bánh sau ưu đãi, hỗ trợ tính trả góp đến 85%
@@ -1504,10 +1567,10 @@
         </div>
 
         <div class="form-box">
-          <h2>Đăng ký nhận giá tốt</h2>
+          <h2>Đăng ký kiểm tra 3 xe còn lại</h2>
 
           <p>
-            Điền thông tin bên dưới để được kiểm tra ưu đãi riêng cho Limo Green.
+            Điền thông tin bên dưới để được kiểm tra ưu đãi riêng cho Limo Green trước khi 3 xe cuối được chốt.
           </p>
 
           <form action="https://formspree.io/f/mvzyoqqo" method="POST">
@@ -1519,19 +1582,19 @@
 
             <select name="need" required>
               <option value="">Anh/chị muốn tư vấn gì?</option>
+              <option>Kiểm tra 3 xe Limo Green còn ưu đãi</option>
               <option>Nhận báo giá lăn bánh Limo Green</option>
               <option>Tư vấn trả góp đến 85%</option>
               <option>Kiểm tra hồ sơ vay / hồ sơ khó</option>
-              <option>Giữ suất ưu đãi nếu còn phù hợp</option>
               <option>Hẹn xem xe trực tiếp</option>
             </select>
 
             <textarea name="message" placeholder="Ghi chú thêm: trả góp hay trả thẳng, số tiền muốn trả trước, thời gian muốn nhận xe..."></textarea>
 
-            <button type="submit">Gửi thông tin nhận ưu đãi</button>
+            <button type="submit">Gửi thông tin giữ suất tư vấn</button>
 
             <div class="note">
-              Thông tin chỉ dùng để tư vấn xe, báo giá và hỗ trợ hồ sơ. Kết quả vay phụ thuộc vào ngân hàng xét duyệt.
+              Thông tin chỉ dùng để tư vấn xe, báo giá và hỗ trợ hồ sơ. Số lượng xe, ưu đãi và kết quả vay phụ thuộc tình trạng thực tế, chính sách tại thời điểm tư vấn và ngân hàng xét duyệt.
             </div>
           </form>
         </div>
@@ -1550,7 +1613,7 @@
   <div class="sticky">
     <a class="call" href="tel:0357893451">Gọi ngay</a>
     <a class="zalo" href="https://zalo.me/0357893451">Chat Zalo</a>
-    <a class="quote" href="#form">Nhận giá ưu đãi</a>
+    <a class="quote" href="#form">Giữ suất 3 xe</a>
   </div>
 
 </body>
