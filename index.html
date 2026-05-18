@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '990323950203333');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '990323950203333');
+  fbq('track', 'PageView');
+
+  function trackLead() {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead');
+    }
+  }
+
+  function trackContact() {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Contact');
+    }
+  }
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -813,8 +826,8 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
       </a>
 
       <div class="nav-actions">
-        <a class="phone" href="tel:0357893451">035.789.3451</a>
-        <a class="nav-btn" href="#form">Nhận báo giá</a>
+        <a class="phone" href="tel:0357893451" onclick="trackContact()">035.789.3451</a>
+        <a class="nav-btn" href="#form" onclick="trackLead()">Nhận báo giá</a>
       </div>
     </div>
   </nav>
@@ -858,8 +871,8 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
         </div>
 
         <div class="cta-row">
-          <a href="#form" class="btn btn-red">Kiểm tra giá tốt ngay</a>
-          <a href="tel:0357893451" class="btn btn-white">Gọi 035.789.3451</a>
+          <a href="#form" class="btn btn-red" onclick="trackLead()">Kiểm tra giá tốt ngay</a>
+          <a href="tel:0357893451" class="btn btn-white" onclick="trackContact()">Gọi 035.789.3451</a>
         </div>
 
         <div class="note">
@@ -911,7 +924,7 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
             Khi đủ xe, chính sách có thể thay đổi theo đợt tiếp theo.
           </p>
 
-          <a href="#form" class="btn btn-red">Giữ suất tư vấn</a>
+          <a href="#form" class="btn btn-red" onclick="trackLead()">Giữ suất tư vấn</a>
         </div>
 
       </div>
@@ -971,7 +984,7 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
             Hết xe, chính sách có thể đổi theo chương trình mới.
           </p>
           <br />
-          <a href="#form" class="btn btn-green">Kiểm tra ngay</a>
+          <a href="#form" class="btn btn-green" onclick="trackLead()">Kiểm tra ngay</a>
         </div>
 
       </div>
@@ -1001,26 +1014,12 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
             Điền thông tin để kiểm tra ưu đãi Limo Green và 3 xe còn giữ mức hỗ trợ tốt.
           </p>
 
-          <form action="https://formspree.io/f/mvzyoqqo" method="POST">
-            <input
-              type="text"
-              name="name"
-              placeholder="Họ và tên"
-              required
-            />
+          <form action="https://formspree.io/f/mvzyoqqo" method="POST" onsubmit="trackLead()">
+            <input type="text" name="name" placeholder="Họ và tên" required />
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Số điện thoại / Zalo"
-              required
-            />
+            <input type="tel" name="phone" placeholder="Số điện thoại / Zalo" required />
 
-            <input
-              type="text"
-              name="location"
-              placeholder="Khu vực đăng ký xe: Hà Nội, tỉnh khác..."
-            />
+            <input type="text" name="location" placeholder="Khu vực đăng ký xe: Hà Nội, tỉnh khác..." />
 
             <select name="need" required>
               <option value="">Anh/chị muốn tư vấn gì?</option>
@@ -1059,9 +1058,9 @@ src="https://www.facebook.com/tr?id=990323950203333&ev=PageView&noscript=1"
   </footer>
 
   <div class="sticky">
-    <a class="call" href="tel:0357893451">Gọi ngay</a>
-    <a class="zalo" href="https://zalo.me/0357893451">Chat Zalo</a>
-    <a class="quote" href="#form">Nhận báo giá</a>
+    <a class="call" href="tel:0357893451" onclick="trackContact()">Gọi ngay</a>
+    <a class="zalo" href="https://zalo.me/0357893451" onclick="trackLead()">Chat Zalo</a>
+    <a class="quote" href="#form" onclick="trackLead()">Nhận báo giá</a>
   </div>
 
 </body>
