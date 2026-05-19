@@ -2,23 +2,26 @@
 <html lang="vi">
 <head>
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '964024376400047');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=964024376400047&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '964024376400047');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=964024376400047&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -1048,6 +1051,20 @@ src="https://www.facebook.com/tr?id=964024376400047&ev=PageView&noscript=1"
     <a class="zalo" href="https://zalo.me/0357893451" onclick="trackLead()">Chat Zalo</a>
     <a class="quote" href="#form" onclick="trackLead()">Nhận báo giá</a>
   </div>
+
+  <script>
+    function trackLead() {
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+      }
+    }
+
+    function trackContact() {
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Contact');
+      }
+    }
+  </script>
 
 </body>
 </html>
